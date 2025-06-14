@@ -11,7 +11,7 @@ st.title("Prediksi Tingkat Obesitas")
 st.write("Aplikasi Machine Learning untuk memprediksi tingkat obesitas berdasarkan data gaya hidup")
 
 # Load Data
-data = pd.read_csv("ObesityDataSet.csv")
+data = pd.read_csv("ObesityDataSet.csv", encoding='latin1')
 
 # Bersihkan nilai '?'
 data.replace('?', np.nan, inplace=True)
